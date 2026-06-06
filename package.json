@@ -1,0 +1,30 @@
+{
+  "name": "turtlestation-game-frontend",
+  "version": "1.0.0",
+  "description": "Premium Steam Deck style game frontend launcher for Linux",
+  "main": "main.js",
+  "bin": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "electron": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "pkg": {
+    "assets": [
+      "public/**/*"
+    ],
+    "targets": [
+      "node20-linux-x64"
+    ]
+  },
+  "author": "TurtleStation",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^41.7.1",
+    "electron-builder": "^26.15.0"
+  }
+}
